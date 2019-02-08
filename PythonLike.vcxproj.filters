@@ -33,14 +33,14 @@
     <ClInclude Include="Enumerate.h">
       <Filter>Header Files\enumerate</Filter>
     </ClInclude>
-    <ClInclude Include="measureTime.h">
-      <Filter>Header Files\util</Filter>
-    </ClInclude>
     <ClInclude Include="EnumerateIterator.h">
       <Filter>Header Files\enumerate</Filter>
     </ClInclude>
     <ClInclude Include="Test.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeUtilities.h">
+      <Filter>Header Files\util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

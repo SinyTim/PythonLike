@@ -118,10 +118,10 @@
   <ItemGroup>
     <ClInclude Include="Enumerate.h" />
     <ClInclude Include="EnumerateIterator.h" />
-    <ClInclude Include="measureTime.h" />
     <ClInclude Include="Range.h" />
     <ClInclude Include="RangeIterator.h" />
     <ClInclude Include="Test.h" />
+    <ClInclude Include="TimeUtilities.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

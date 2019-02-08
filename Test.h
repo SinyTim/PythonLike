@@ -5,7 +5,7 @@
 #include <algorithm>
 #include "Range.h"
 #include "Enumerate.h"
-#include "measureTime.h"
+#include "TimeUtilities.h"
 
 
 
@@ -44,19 +44,19 @@ private:
 
     static void testRangeTime() {
 
-        std::vector<int> v;
+        std::vector<int> v1;
 
-        auto t1 = measureTime([&v]() {
+        auto t1 = TimeUtilities::measureTime([&v1]() {
             for (size_t i = 0; i < 10'000'000ll; ++i) {
-                v.push_back(17);
+                v1.push_back(17);
             }
         });
 
-        v.clear();
+        std::vector<int> v2;
 
-        auto t2 = measureTime([&v]() {
+        auto t2 = TimeUtilities::measureTime([&v2]() {
             for (auto i : irange(10'000'000ll)) {
-                v.push_back(17);
+                v2.push_back(17);
             }
         });
 
